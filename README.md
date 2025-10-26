@@ -1,4 +1,4 @@
-# 🌍 [Evangadi Community Q&A Platform](https://evangadiforum.abdisaketema.com/)
+# 🌍 [Evangadi Community Q&A Platform]
 
 A **full-stack community-driven Question & Answer platform** built for and by **Evangadi Community**.  
 Users can register, log in, post questions, and share answers — fostering learning and collaboration among developers.
@@ -7,7 +7,7 @@ Users can register, log in, post questions, and share answers — fostering lear
 
 ## 🚀 Live Preview
 
-🔗 **Frontend (React):** [https://evangadiforum.abdisaketema.com/](https://evangadiforum.abdisaketema.com/)  
+🔗 **Frontend (React):**
 💾 **Backend (Node.js + Express):** Hosted API connected to MySQL
 
 ---
