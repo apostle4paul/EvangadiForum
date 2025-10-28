@@ -10,8 +10,20 @@ const answerRoutes = require("./routes/answerRoute");
 const app = express();
 const port = process.env.PORT || 5500;
 
+// ✅ Allow frontend domains in CORS
+app.use(
+  cors({
+    origin: [
+      "https://evangadiforum.vercel.app", // your frontend on Vercel
+      "https://apostle4paul.github.io",    // optional: GitHub Pages
+      "http://localhost:5173"              // for local development
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
+);
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
@@ -43,7 +55,7 @@ async function startServer() {
   } finally {
     // Always start the server to avoid Render killing the process
     app.listen(port, () => {
-      console.log(`Server listening on port ${port}`);
+      console.log(`✅ Server listening on port ${port}`);
     });
   }
 }
