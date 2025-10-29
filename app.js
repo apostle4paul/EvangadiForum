@@ -14,6 +14,7 @@ const port = process.env.PORT || 5500;
 app.use(
   cors({
     origin: [
+      "https://evangadiforum.meleketedev.com/",
       "http://localhost:5173"              // for local development
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
