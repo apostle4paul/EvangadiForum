@@ -14,8 +14,6 @@ const port = process.env.PORT || 5500;
 app.use(
   cors({
     origin: [
-      "https://evangadiforum.vercel.app", // your frontend on Vercel
-      "https://apostle4paul.github.io",    // optional: GitHub Pages
       "http://localhost:5173"              // for local development
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
